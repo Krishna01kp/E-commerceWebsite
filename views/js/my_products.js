@@ -1,4 +1,4 @@
-const url = "http://localhost:5555/products/myproducts";
+const url = "https://shopeonline-kkp.herokuapp.com/products/myproducts";
 
 $(() => {
     $.get(url).done((data) => { populateData(data) });
@@ -24,9 +24,9 @@ function createCard(data) {
     deleteBtn.click((e) => {
         e.preventDefault();
         $.ajax({
-            url: 'http://localhost:5555/products/' + data._id,
+            url: 'https://shopeonline-kkp.herokuapp.com/products/' + data._id,
             method: 'DELETE'
-        }).done(() => window.location.replace('http://localhost:5555/user/myproducts'));
+        }).done(() => window.location.replace('https://shopeonline-kkp.herokuapp.com/user/myproducts'));
     });
 
 

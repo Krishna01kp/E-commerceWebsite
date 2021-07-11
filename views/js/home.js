@@ -1,6 +1,6 @@
-const url = "http://localhost:5555/products";
+const url = "https://shopeonline-kkp.herokuapp.com/products";
 // Add to cart url
-const addToCartUrl = 'http://localhost:5555/products/cart/';
+const addToCartUrl = 'https://shopeonline-kkp.herokuapp.com/products/cart/';
 $(() => {
     $.get(url).done((data) => { populateData(data) });
 
